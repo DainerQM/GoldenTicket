@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Especial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1a1a1a;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+        }
+
+        .ticket {
+            background: linear-gradient(145deg, #ffd700, #b8860b);
+            padding: 2px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+            animation: shine 2s infinite;
+            box-shadow: 0 0 50px rgba(255, 215, 0, 0.3);
+        }
+
+        .ticket-inner {
+            background: #000;
+            color: #ffd700;
+            padding: 40px;
+            border-radius: 13px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .subtitle {
+            color: #fff;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .details {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+        }
+
+        .info {
+            color: #fff;
+            margin: 15px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .special-text {
+            color: #ffd700;
+            font-style: italic;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .decoration {
+            font-size: 2em;
+            color: #ffd700;
+            margin: 20px 0;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 1em;
+            color: #ffd700;
+            font-style: italic;
+        }
+
+        @keyframes shine {
+            0% {
+                box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 50px rgba(255, 215, 0, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .ticket-inner {
+                padding: 20px;
+            }
+            .title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <div class="ticket-inner">
+            <div class="decoration">✧✦✧</div>
+            <h1 class="title">Golden Ticket</h1>
+            <p class="subtitle">Has sido cordialmente invitada a una velada mágica</p>
+            
+            <div class="details">
+                <p class="info">Hora: Al caer la noche, cuando las estrellas brillen</p>
+            </div>
+
+            <p class="special-text">Válido solo para la chica de ojitos esmeralda</p>
+            <div class="decoration">✧✦✧</div>
+            
+            <p class="footer">
+                Una noche mágica te espera...
+            </p>
+        </div>
+    </div>
+</body>
+</html>
